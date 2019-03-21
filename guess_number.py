@@ -33,3 +33,4 @@ if NUMBERGUESSED == COMPUTERNUMBER: # With respect to two outcomes, process two 
 if NUMBERGUESSED != COMPUTERNUMBER:
     COMPUTERNUMBER = str(COMPUTERNUMBER)
     print('Nope. The number I thought was ' + COMPUTERNUMBER)
+    #Extra Range to input
