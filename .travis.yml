@@ -1,7 +1,10 @@
 language: python
 python:
-    "3"
-# command to install dependencies
-install: "pip install -r requirements.txt"
-# command to run tests
-script: guess_number.py
+  - "2.7"
+  - "3.3"
+  - "3.4"
+cache: pip
+install:
+  - pip install -r requirements.txt
+script:
+  - guess_number.py --cov-report term-missing --cov app -v
